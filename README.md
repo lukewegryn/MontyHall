@@ -15,4 +15,4 @@ Usage is:
 ```
 "Iterations" is the number of times you want to run the simulation.
 
-"Seed" is the seed for the random number generator used to fill the bags, and pick the contestants bag
+"Seed" is the seed for the random number generator used to fill the bags, and pick the contestants bag.
