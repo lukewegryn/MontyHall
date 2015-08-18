@@ -60,11 +60,12 @@ int main(int argc, char *argv[]){
 		int bags[3] = {EMPTY,EMPTY,EMPTY}; //initially all bags are empty
 		int prizeBag = rand_interval(0,2); //randomly decide which bag the prize goes in
 		bags[prizeBag] = PRIZE; //put the prize in the bag
-		bags[rand_interval(0,2)] = OUTOFPLAY; //contestant picks a bag
-		bags[findEmpty(bags)] = OUTOFPLAY; //host turns back and discards empty bag
+		//bags[rand_interval(0,2)] = OUTOFPLAY; //contestant picks a bag
+		bags[0] = OUTOFPLAY; //contestant picks a bag (pick 0 everytime for performance)
+		//bags[findEmpty(bags)] = OUTOFPLAY; //host turns back and discards empty bag
 		//printf("The current status of the bags are: [%d , %d , %d]\n",bags[0], bags[1], bags[2]);
 		for(int i = 0; i < 3; i++){
-			if(bags[i] == 1){
+			if(bags[i] == PRIZE){
 				switchBagCount++;
 				break;
 			}
