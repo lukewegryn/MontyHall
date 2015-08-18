@@ -66,6 +66,7 @@ int main(int argc, char *argv[]){
 		for(int i = 0; i < 3; i++){
 			if(bags[i] == 1){
 				switchBagCount++;
+				break;
 			}
 		}
 	 }
